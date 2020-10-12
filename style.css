@@ -1,0 +1,33 @@
+.stopwatch{
+    text-align: center;
+}
+
+.stopwatch button{
+    background-color: transparent;
+    padding: 15px;
+    font-size: large;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+.stopwatch .start{
+    border-color: green;
+    color: green;
+}
+
+.stopwatch .start:hover{
+    background-color: green;
+    color: white;
+}
+
+.stopwatch .reset{
+    border-color: red;
+    color: red;
+}
+
+.stopwatch .reset:hover{
+    background-color: red;
+    color: white;
+}
