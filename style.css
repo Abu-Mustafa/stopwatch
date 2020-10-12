@@ -1,10 +1,45 @@
+/*start stop watch*/
+
 .stopwatch{
     text-align: center;
+}
+
+.stopwatch h1{
+    font-size: 46px;
+}
+
+.num-container{
+    margin: 25px 0;
+}
+
+.num-container .houres, .num-container .minutes, .num-container .seconds{
+    background-color: lightgray;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.stopwatch .points{
+    height: 15px;
+    transform: translateY(-8px);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stopwatch .points span{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
 }
 
 .stopwatch button{
     background-color: transparent;
     padding: 15px;
+    margin: 0 10px;
     font-size: large;
     border: 1px solid;
     border-radius: 5px;
@@ -17,17 +52,34 @@
     color: green;
 }
 
+
 .stopwatch .start:hover{
     background-color: green;
     color: white;
 }
 
 .stopwatch .reset{
+    border-color: yellowgreen;
+    color: yellowgreen;
+}
+
+.stopwatch .reset:hover{
+    background-color: yellowgreen;
+    color: white;
+}
+
+.stopwatch .stop{
     border-color: red;
     color: red;
 }
 
-.stopwatch .reset:hover{
+.stopwatch .stop:hover{
     background-color: red;
     color: white;
 }
+
+.stopwatch .hide{
+    display: none;
+}
+
+/*end stop watch*/

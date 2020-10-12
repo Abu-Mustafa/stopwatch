@@ -7,12 +7,40 @@
     <title>stop watch</title>
 </head>
 <body>
+
+    <!-- start stop watch -->
+
     <div class="stopwatch">
         <h1>stop watch</h1>
-        <div><h3>0</h3></div>
-        <button class="start">Start stopwatch</button>
-        <button class="reset">reset</button>
+        <div id="num-container" class="num-container">
+            <span class="houres">
+                <span class="tens">0</span>
+                <span class="ones">0</span>
+            </span>
+            <span class="points">
+                <span></span>
+                <span></span>
+            </span>
+            <span class="minutes">
+                <span class="tens">0</span>
+                <span class="ones">0</span>
+            </span>
+            <span class="points">
+                <span></span>
+                <span></span>
+            </span>
+            <span class="seconds">
+                <span class="tens">0</span>
+                <span class="ones">0</span>
+            </span>
+        </div>
+        <button id="start" class="start">Start</button>
+        <button id="stop" class="stop hide">stop</button>
+        <button id="reset" class="reset">reset</button>
     </div>
+
+    <!-- end stop watch -->
+
     <script src="dom.js"></script>
 </body>
 </html>
