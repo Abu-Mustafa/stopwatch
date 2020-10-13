@@ -51,6 +51,14 @@ function stopIntarval() {
 
 function reset() {
     document.querySelector('.stopwatch #num-container .seconds .ones').textContent = 0;
+    document.querySelector('.stopwatch #num-container .seconds .tens').textContent = 0;
+
+    document.querySelector('.stopwatch #num-container .minutes .ones').textContent = 0;
+    document.querySelector('.stopwatch #num-container .minutes .tens').textContent = 0;
+
+    document.querySelector('.stopwatch #num-container .houres .ones').textContent = 0;
+    document.querySelector('.stopwatch #num-container .houres .tens').textContent = 0;
+    
     stopIntarval()
     document.querySelector('.stopwatch #start').classList.remove("hide");
     document.querySelector('.stopwatch #stop').classList.add("hide");
